@@ -10,6 +10,8 @@ Gem::Specification.new do |s|
   s.homepage    = "http://paulmillar.com"
   s.summary     = %q{ TinyPNG middleman integration }
   # s.description = %q{A longer description of your extension}
+  s.license       = 'MIT'
+
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -17,8 +19,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # The version of middleman-core your extension depends on
-  s.add_runtime_dependency("middleman-core", [">= 4.2.1"])
+  s.add_runtime_dependency("middleman-core", "~> 4.2")
 
   # Additional dependencies
-  s.add_runtime_dependency("tinify", [">= 1.5"])
+  s.add_runtime_dependency("tinify", "~> 1.5")
 end
